@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.header__list{
+    display: flex;
+    column-gap: 30px;
+}
+.header__tel{
+    display: flex;
+align-items: center;}
+
+.header__item-link{
+    color: brown;
+}
+
+.header__item-link:hover{
+    opacity: 0.3;
+}

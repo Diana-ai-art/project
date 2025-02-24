@@ -2,8 +2,9 @@
     font-size: 16px;
     font-weight: 600;
 
-    background-color: #cec3b667;
-    color: #fffeff;
+    background-color: #e082c4;
+    color: #5f364f
+    ;
 
     border: 0;
     border-radius: 8px;
@@ -19,4 +20,9 @@ a{
 
 ul{
     list-style: none;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
 }

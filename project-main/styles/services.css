@@ -1,0 +1,26 @@
+.services{
+    margin-top: 150px;
+}
+.services__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.services__item {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 15px;
+    max-width: 200px;
+    font-size: 18px;
+    line-height: 103%;
+    text-align: center;
+}
+
+.services__image {
+    height: 100%;
+
+}

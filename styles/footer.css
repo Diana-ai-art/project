@@ -1,0 +1,25 @@
+/* Основные стили для футера */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 10px;
+    color: rgba(247, 222, 5, 0.966);
+    text-align: center;
+    border-top: 8px;
+}
+.footer__hr{
+    height: 12px;
+    width: 100%;
+    background: rgba(105, 45, 129, 0.61); 
+}
+/* Логотип */
+.footer__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(105, 45, 129, 0.61);
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+

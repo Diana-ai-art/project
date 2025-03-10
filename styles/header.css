@@ -5,22 +5,26 @@
     padding: 0 20px;
 }
 .header__logo{
-    font-size: 60px;
+    font-size: 25px;
     color:  #ee1ec1
 }
 .header__list{
     display: flex;
-    column-gap: 45px;
+    column-gap: 15px;
 }
 .header__tel{
     display: flex;
 align-items: center;
-color: #fc14ca;}
-
+color: #fc14ca;
+font-size: 15px;
+}
 .header__item-link{
     color: rgb(250, 4, 188);
 }
 
 .header__item-link:hover{
     opacity: 0.3;
+}
+.header__tel-num{
+    color: #fc14ca;
 }

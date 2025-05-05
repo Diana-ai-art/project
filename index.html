@@ -26,7 +26,7 @@
             <a href="tel:89076859456" class="header__tel-num">89076859456</a>
         </div>
         <div class="header__btn">
-            <button class="header__button  button" type="button">Войти</button>
+            <button class="header__button  button button-modal" type="button">Войти</button>
             <button class="header__button button" type="button">Регистрация</button>
         </div>
 
@@ -75,9 +75,9 @@
                 <li class="card__item">
                     <img class="card__icon" src="img/teacher.png" alt="Иконка для для профессиональных преподавателей"
                         width="150" height="125">
-                    <h3 class="card__title">Преподаватели</h3>
+                    <h3 class="card__title">Квалифицированные преподаватели</h3>
                     <p class="card__description">Преподаватели проходят повышения своей квалификации и готовы отвечать
-                        на ваши вопросы 24/7"</p>
+                        на ваши вопросы 24/7</p>
                 </li>
                 <li class="card__item">
                     <img class="card__icon" src="img/lessons.jpg" alt="Иконка для удобства дистанционных занятий"
@@ -88,7 +88,8 @@
                     <img class="card__icon" src="img/money.png" alt="Иконка для стоимости занятий" width="150"
                         height="125">
                     <h3 class="card__title">Доступные цены</h3>
-                    <p class="card__description">Выберите удобный способ оплаты</p>
+                    <p class="card__description">Низая стоимость на обучение, но неизменно высокое качество получаемых
+                        знаний! Просто выберите удобный способ оплаты, подходящий именно вам.</p>
                 </li>
             </ul>
         </section>
@@ -97,32 +98,36 @@
             <p class="section__description">Групповое занятие подразумевает нескольких слушателей, занимающихся по одной
                 программе. В группе предусмотрено заранее установленное расписание. Такие занятия эффективнее
                 индивидуальных, потому что позволяют ребятам рассуждать на заданную тему и быстро находить ответы на
-                заданную проблему.</p>
+                задания.</p>
             </div>
         </section>
         <section class="section cost">
             <div class="cost__photo">
                 <h2 class="cost__contevt-title section__title">Сколько стоит занятие</h2>
-                <p class=" section__description">Цена одного занятия составляет 300-1500 р.</p>
+                <p class=" section__description">Цена одного пробного занятия составляет 249р. Стоимость урока в группе
+                    от 300-400р. и зависит от количества учеников, сложности усвоения учебного материала. Цена
+                    индивидуального занятия 799р.</p>
                 <button class="button" name="button">Записаться на пробное занятие</button>
                 <img src="img/triallessons.jpg" alt="Пробное занятие" width="200" height="150">
             </div>
         </section>
         <!--Форма "Заявка"-->
-        <section class="application" hidden>
-            <button class="application__close" type="button"></button>
-            <img src="img/close.png" alt="Закрыть окно" width="15" height="25">
-            <h2 class="application__title">Оставить заявку</h2>
-            <form class="application__form form" action="/" method="post">
-                <input class="form__fild" type="text" name="name" placeholder="Имя" required>
-                <input class="form__fild" type="email" name="email" placeholder="Email" required>
-                <input class="form__fild" type="number" name="number" placeholder="Номер телефона">
-                <fieldset class="form__fieldsed">
-                    <button class="button" type="button">Чат</button>
-                    <button class="button" type="button">Отмена</button>
-                </fieldset>
-            </form>
-        </section>
+        <div class="applications" hidden>
+            <div class="application">
+                <button class="application__close" type="button"></button>
+                <img src="img/close.png" alt="Закрыть окно" width="15" height="25">
+                <h2 class="application__title">Войти</h2>
+                <form class="application__form form" action="/" method="post">
+                    <input class="form__fild" type="text" name="name" placeholder="Имя" required>
+                    <input class="form__fild" type="email" name="email" placeholder="Email" required>
+                    <input class="form__fild" type="number" name="number" placeholder="Номер телефона">
+                    <fieldset class="form__fieldsed">
+                        <button class="button" type="button">Отмена</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
         <!--Форма "Заявка"-->
     </main>
     <!--Подвал-->
@@ -136,6 +141,7 @@
         </div>
     </footer>
     <!--Подвал-->
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

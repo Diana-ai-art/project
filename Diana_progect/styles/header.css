@@ -5,8 +5,8 @@
     padding: 0 20px;
 }
 .header__logo{
-    font-size: 25px;
-    color:  #ee1ec1
+    font-size: 30px;
+    color:  #e215a5;
 }
 .header__list{
     display: flex;
@@ -15,11 +15,11 @@
 .header__tel{
     display: flex;
 align-items: center;
-color: #fc14ca;
+color: #fa08c5;
 font-size: 15px;
 }
 .header__item-link{
-    color: rgb(250, 4, 188);
+    color: rgb(65, 3, 51);
 }
 
 .header__item-link:hover{

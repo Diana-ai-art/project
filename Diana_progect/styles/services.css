@@ -18,9 +18,22 @@
     font-size: 18px;
     line-height: 103%;
     text-align: center;
+    position: relative;
 }
 
 .services__image {
     height: 100%;
 
+}
+.services__text {
+    margin-top: 15px; /*отступ сверху*/
+    color:rgb(66, 14, 46); /*цвет текста*/
+    text-align: center; /*выравнивание текста по центру*/
+    font-size: 22px; /*размер шрифта*/
+    position: absolute; /* позиционируется абсолютно*/
+    width: 200px; /*устанавливаем ширину для текста*/
+    background-color: #70547567; /*задаем фон*/
+    top: 50%; /* верхняя часть смещена на 50% высоты родителя*/
+    left: 50%; /*левая граница смещена на 50% ширины родителя*/
+    transform: translate(-50%, 50%);/* смещаем элемент относительно его текущего положения*/
 }

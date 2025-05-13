@@ -26,7 +26,7 @@
             <a href="tel:89076859456" class="header__tel-num">89076859456</a>
         </div>
         <div class="header__btn">
-            <button class="header__button  button button-modal" type="button">Войти</button>
+            <button class="header__button  button" type="button">Войти</button>
             <button class="header__button button" type="button">Регистрация</button>
         </div>
 
@@ -45,22 +45,40 @@
         </section>
         <section class="section services">
             <ul class="services__card">
-                <li class="services__item"><img class="services__image " src="./img/webinar.jpg" alt="картинка с чем-то"
-                        width="200" height="100">Вебинары</li>
-                <li class="services__item"><img class="services__image " src="./img/Illustration.jpg"
-                        alt="картинка с чем-то" width="200" height="100">Иллюстрации</li>
-                <li class="services__item"><img class="services__image " src="./img/images.jpg" alt="картинка с чем-то"
-                        width="200" height="100">Аудиофайлы</li>
-                <li class="services__item"><img class="services__image " src="./img/text.jpg" alt="картинка с чем-то"
-                        width="200" height="100">Текстовые материалы</li>
-                <li class="services__item"><img class="services__image " src="./img/additionalmaterials.jpg"
-                        alt="картинка с чем-то" width="200" height="100">Дополнительные учебные материалы</li>
-                <li class="services__item"><img class="services__image " src="./img/interactivetasks.jpg"
-                        alt="картинка с чем-то" width="200" height="100">Интерактивные задания</li>
-                <li class="services__item"><img class="services__image " src="./img/video.jpg" alt="картинка с чем-то"
-                        width="200" height="100">Видеоматериалы</li>
-                <li class="services__item"><img class="services__image " src="./img/chat.png" alt="картинка с чем-то"
-                        width="200" height="100">Чат с преподавателем</li>
+                <li class="services__item">
+                    <img class="services__image " src="./img/webinar.jpg" alt="картинка с чем-то" width="200"
+                        height="100">
+                    <p class="services__text" hidden>Вебинары. Позволяют общаться с большой онлайн-аудиторией из любого места
+                        и устройства.</p>
+                </li>
+                <li class="services__item">
+                    <img class="services__image " src="./img/Illustration.jpg" alt="картинка с чем-то" width="200" height="100">
+                    <p class="services__text" hidden>Иллюстрации. Усиливают визуальное восприятие и поясняют текст или теорию.</p>
+                </li>
+                <li class="services__item">
+                    <img class="services__image " src="./img/images.jpg" alt="картинка с чем-то" width="200" height="100">
+                    <p class="services__text" hidden>Аудиофайлы. Способствуют повышению эффективности обучения.</p>
+                </li>
+                <li class="services__item">
+                    <img class="services__image " src="./img/text.jpg" alt="картинка с чем-то" width="200" height="100">
+                    <p class="services__text" hidden>Текстовые материалы. Позволяют изучить материал в своем темпе,
+                    возвращаться к разделам.</p>
+                </li>
+                <li class="services__item">
+                    <img class="services__image " src="./img/additionalmaterials.jpg" alt="картинка с чем-то" width="200" height="100">
+                    <p class="services__text" hidden>Дополнительные учебные материалы. Помогут узнать больше интересного.</p>
+                </li>
+                <li class="services__item">
+                    <img class="services__image " src="./img/interactivetasks.jpg" alt="картинка с чем-то" width="200" height="100">
+                    <p class="services__text" hidden>Интерактивные задания. Помогут систематизировать изученный материал и закрепить его в игровой форме.</p>
+                </li>
+                <li class="services__item"><img class="services__image " src="./img/video.jpg" alt="картинка с чем-то" width="200" height="100">
+                    <p class="services__text" hidden>Видеоматериалы. Дают возможность доступной и понятной визуализации материала.</p>
+                </li>
+                <li class="services__item">
+                    <img class="services__image " src="./img/chat.png" alt="картинка с чем-то" width="200" height="100">
+                    <p class="services__text" hidden>Чат с преподавателем. Круглосуточное получение ответов на ваши вопросы.</p> 
+                </li>
             </ul>
         </section>
         <section class="section card">
@@ -103,31 +121,28 @@
         </section>
         <section class="section cost">
             <div class="cost__photo">
-                <h2 class="cost__contevt-title section__title">Сколько стоит занятие</h2>
+                <h2 class="cost__contevt-title section__title">Сколько стоит занятие?</h2>
                 <p class=" section__description">Цена одного пробного занятия составляет 249р. Стоимость урока в группе
                     от 300-400р. и зависит от количества учеников, сложности усвоения учебного материала. Цена
                     индивидуального занятия 799р.</p>
                 <button class="button" name="button">Записаться на пробное занятие</button>
-                <img src="img/triallessons.jpg" alt="Пробное занятие" width="200" height="150">
             </div>
         </section>
         <!--Форма "Заявка"-->
-        <div class="applications" hidden>
-            <div class="application">
-                <button class="application__close" type="button"></button>
-                <img src="img/close.png" alt="Закрыть окно" width="15" height="25">
-                <h2 class="application__title">Войти</h2>
-                <form class="application__form form" action="/" method="post">
-                    <input class="form__fild" type="text" name="name" placeholder="Имя" required>
-                    <input class="form__fild" type="email" name="email" placeholder="Email" required>
-                    <input class="form__fild" type="number" name="number" placeholder="Номер телефона">
-                    <fieldset class="form__fieldsed">
-                        <button class="button" type="button">Отмена</button>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-
+        <section class="application" hidden>
+            <button class="application__close" type="button"></button>
+            <img src="img/close.png" alt="Закрыть окно" width="15" height="25">
+            <h2 class="application__title">Оставить заявку</h2>
+            <form class="application__form form" action="/" method="post">
+                <input class="form__fild" type="text" name="name" placeholder="Имя" required>
+                <input class="form__fild" type="email" name="email" placeholder="Email" required>
+                <input class="form__fild" type="number" name="number" placeholder="Номер телефона">
+                <fieldset class="form__fieldsed">
+                    <button class="button" type="button">Чат</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+            </form>
+        </section>
         <!--Форма "Заявка"-->
     </main>
     <!--Подвал-->

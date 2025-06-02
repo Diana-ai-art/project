@@ -123,3 +123,111 @@ const createLink = (UrlLink, title) =>{
     }
 }
 
+//3.6.1
+const cardsmaincontainer = document.querySelector(".card");
+if (cardsImages) {
+const cardList = cardsmaincontainer.querySelector(".card__list");
+// Пример URL для получения данных с сервера
+const apiUrl = "images.json";
+// Функция для создания карточки
+const createCard = (imageUrl, imageAlt, imageWidth, imageHeight, title, description) =>{
+   //Шаблонные строки и подстановки
+const card = `
+<li class="card__item">
+<img class="card__icon">
+<img src="${image}" alt="${imageAlt}" width="${imageWidth}"  height="${imageHeight}">
+</img>
+<h3 class="card__title">${title}</h3>
+<p class="card__description">${description}</p>
+</li>
+`
+return card; 
+}
+//// Загрузка данных с сервера
+fetch(apiUrl)
+.then((response) => response.json())
+.then((images) => {
+console.log(images); // Данные
+console.log(typeof images); // Тип полученных данных
+// for (const item in data) {
+// const card = data[item];
+// const cardElement = createCard(card.image, card.imageAlt, card.imageWidth, card.Height, card.title, card.description);
+// cardListImages.insertAdjacentHTML("beforeend", cardElement);
+//}
+data.forEach(item=> {
+    const cardElement= createcard (item.image, item.imageAlt, item.imageWidth, item.imageHeight, item.title, item.description);
+    cardList.insertAdjacentHTML(`beforend`, cardElement);
+});
+})
+.catch (error => console.error(`Ошибка при загрузке данных:`, error));
+}
+//3.6.2
+const preloader = document.querySelector(".preloader");
+const content = document.querySelector(".content");
+if (preloader && content) {
+setTimeout(() => {
+// Скрываем прелоадер
+preloader.style.opacity = "0";
+preloader.style.visibility = "hidden";
+// Показываем контент
+content.style.display = "block";
+// Удаляем элемент из DOM
+preloader.remove();
+}, 3000); // Задержка 3 секунды
+}
+
+//3.7.1
+// объявляем переменную sliders,куда помещаем элемент с классом swiper
+const sliders = document.querySelector('.swiper');
+//проверяем существует ли элемент
+    if (sliders) {
+        const swiper1 = new Swiper(sliders, {
+            // Пагинация
+            pagination: {
+                el: '.swiper-pagination', type: "fraction",
+            },
+                    // Навигационные стрелки
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+
+//ИСПОЛЬЗОВАНИЕ LOCALSTORAGE задание 3.7
+// Объявляем переменную formApplication и помещаем в нее элемент с id "formApplication"
+const formApplication = document.querySelector("#formApplication");
+// Проверяем, существует ли элемент formApplication
+if (formApplication) 
+// Добавляем обработчик события для отправки формы
+formApplication.addEventListener("submit", (event) => {
+    event.preventDefault(); // Предотвращаем отправку формы
+// Объявляем переменные "username", "tel","email", и помещаем в нее элементы с id из формы
+const username = formApplication.querySelector("#username").value;
+const tel = formApplication.querySelector("#tel").value;
+const email = formApplication.querySelector("#email").value;
+// Объявляем переменную modalMessage и помещаем в нее элемент для отображения сообщений о статусе заявки
+const modalMessage = headerMenu.querySelector("#application-message");
+// Проверка длины имени пользователя
+if (username.length < 3) {
+modalMessage.textContent = "Имя пользователя должно содержать не менее 3 символов";
+modalMessage.style.color = "black";
+// Устанавливаем цвет сообщения об ошибке 
+return;
+}
+// Проверка номера телефона
+if (!/^\d{10,}$/.test(tel)) {
+modalMessage.textContent = "Номер телефона должен содержатьтолько цифры и быть не менее 10 символов";
+modalMessage.style.color = "black"; // Устанавливаем цвет
+сообщения
+return;
+}
+// Здесь можно добавить отправку данных на сервер
+modalMessage.textContent = "Заявка отправлена!";
+modalMessage.style.color = "green"; 
+// Устанавливаем цвет сообщения для успешной отправки
+// Записываем данные в localStorage
+window.localStorage.setItem("username", username);
+window.localStorage.setItem("tel", tel);
+window.localStorage.setItem("email", email);
+});

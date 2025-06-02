@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+    <div class="preloader">
+    <div class="loader">
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+    </div>
+    Загрузка...
+</div>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-
 <body>
+
     <header class="header container">
         <a class="header__logo" href="#">TUTOR DI</a>
         <nav class="header__nav">
@@ -36,6 +44,7 @@
             <div class="aside__socials">
             </div>
         </aside>
+    
         <section class="section promo">
             <div class="promo__content">
                 <h1 class="promo__title section__title">Репетитор по обществознанию</h1>
@@ -113,43 +122,42 @@
         </section>
              <!-- стили в services.css --> 
          <section class="section--treners" id="trener"> 
-            <h2 class="treners__title section__title">Наши преподаватели</h2> 
+            <h2 class="treners__title section__title">Наши преподаватели:</h2> 
                <ul class="treners__card"> 
                 <li class="treners__item"> 
-                    <img src="img/pravo.jpeg" alt="Педагог Мария Васильевна" class="treners__img"> 
+                    <img src="img/pravo.jpeg" width="300" height="150" alt="Педагог Мария Васильевна"   class="treners__img"> 
                     <h3 class="treners__subtitle">Мария Васильевна</h3> 
                     <p class="treners__test">Преподаватель по блоку "Право"</p> 
                     <button class="treners__link" type="button">Подробнее</button> 
                 </li> 
                 <li class="treners__item"> 
-                    <img src="img/chelovek.jpg" alt="Педагог Зинаида Петровна" class="treners__img"> 
+                    <img src="img/chelovek.jpg" alt="Педагог Зинаида Петровна"  width="300" height="150" class="treners__img"> 
                     <h3 class="treners__subtitle">Зинаида Петровна</h3> 
                     <p class="treners__test">Преподаватель по блоку "Человек и общество"</p> 
                     <button class="treners__link" type="button">Подробнее</button> 
                 </li> 
                  <li class="treners__item"> 
-                    <img src="img/econom.jpeg" alt="Педагог София Георгиевна" class="treners__img">
+                    <img src="img/econom.jpeg" alt="Педагог София Георгиевна"  width="300" height="150" class="treners__img">
                     <h3 class="treners__subtitle">София Георгиевна</h3> 
                     <p class="treners__test">Преподаватель по блоку "Экономика"</p> 
                     <button class="treners__link" type="button">Подробнее</button> 
                 </li> 
                 <li class="treners__item"> 
-                    <img src="img/duh.jpeg" alt="Педагог Станислав Владимирович" class="treners__img"> 
+                    <img src="img/duh.jpeg" alt="Педагог Станислав Владимирович"  width="300" height="150" class="treners__img"> 
                     <h3 class="treners__subtitle">Станислав Владимирович</h3> 
                     <p class="treners__test">Преподаватель по блоку "Духовная культура"</p> 
                     <button class="treners__link" type="button">Подробнее</button> 
                 </li> 
                        <li class="treners__item"> 
-                    <img src="img/politica.jpeg" alt="Педагог Дарина Сергеевна" class="treners__img"> 
+                    <img src="img/politica.jpeg" alt="Педагог Дарина Сергеевна"  width="300" height="150" class="treners__img"> 
                     <h3 class="treners__subtitle">Дарина Сергеевна</h3> 
                     <p class="treners__test">Преподаватель по блоку "Политика"</p> 
                     <button class="treners__link" type="button">Подробнее</button> 
                 </li> 
                </ul> 
-               <div class="treners__button"> 
-            
-                </button> 
-        <!-- стили в services.css -->                                   
+        </section>
+        <!-- стили в services.css --> 
+                        
         <section class="section private lessons">
             <h2 class="private lessons__content-title">Чем вебинары лучше?</h2>
             <p class="section__description">Групповое занятие подразумевает нескольких слушателей, занимающихся по одной
@@ -176,15 +184,30 @@
                     <p class="application__text">Акция деййствительна до 25 июля 2025года</p>
                 </div>
                 <button class="application__close" type="button">Закрыть</button>
-                    <form action="/" class="application__form">
+                    <form action="/" class="application__form" id="formApplication">
                         <input class="application__input" type="text" placeholder="Имя">
                          <input class="application__input" type="tel" placeholder="Телефон">
                          <input class="application__input" type="email" placeholder="Email">
-                        <button class="application__button button">Отправить заявку</button>
+                        <button class="application__button button" type="submit">Отправить заявку</button>
                     </form>
+                    <p id="application-message" class="application__message"></p>
                 </div>
             </section>
     </main>
+     <!-- Swiper -->
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/sertifacate1.jpg" alt="Slide 1"  width="300" height="150" class="swiper-slid-image">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/sertifacate12.jpg" alt="Slide 2"  width="300" height="150" class="swiper-slid-image">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/sertifacate3.webp" alt="Slide 3"  width="300" height="150" class="swiper-slid-image">
+      </div>
+    </div>
+
     <!--Подвал-->
     <footer class="footer container">
         <div class="footer__hr"> </div>
@@ -197,6 +220,11 @@
     </footer>
     <!--Подвал-->
     <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+     <script>
+    var swiper = new Swiper(".mySwiper", {});
+ </script>
 </body>
 
 </html>

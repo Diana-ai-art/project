@@ -173,7 +173,7 @@ preloader.style.visibility = "hidden";
 content.style.display = "block";
 // Удаляем элемент из DOM
 preloader.remove();
-}, 3000); // Задержка 3 секунды
+}, 3000); // Задержка 2 секунды
 }
 
 //3.7.1

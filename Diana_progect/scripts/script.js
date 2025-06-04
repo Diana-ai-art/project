@@ -161,6 +161,8 @@ data.forEach(item=> {
 })
 .catch (error => console.error(`Ошибка при загрузке данных:`, error));
 }
+
+
 //3.6.2
 const preloader = document.querySelector(".preloader");
 const content = document.querySelector(".content");
@@ -173,7 +175,7 @@ preloader.style.visibility = "hidden";
 content.style.display = "block";
 // Удаляем элемент из DOM
 preloader.remove();
-}, 3000); // Задержка 2 секунды
+}, 3000); // Задержка 3 секунды
 }
 
 //3.7.1

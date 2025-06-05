@@ -9,213 +9,236 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<div class="preloader">
+
+<body>
+    <div class="preloader">
     <div class="loader">
         <span class="dot1"></span>
-        <span class="dot1"></span>
-        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
     </div>
     Загрузка...
 </div>
-<body>
-    <header class="header container">
-        <a class="header__logo" href="#">TUTOR DI</a>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <!--<li class="header__item"><a class="header__item-link" href="#">Услуги</a></li>
+    <div class="content">
+        <header class="header container">
+            <a class="header__logo" href="#">TUTOR DI</a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <!--<li class="header__item"><a class="header__item-link" href="#">Услуги</a></li>
                 <li class="header__item"><a class="header__item-link" href="#">Способы оплаты</a></li>
                 <li class="header__item"><a class="header__item-link" href="#">Комментарии</a></li>
                 <li class="header__item"><a class="header__item-link" href="#">Отзывы</a></li>-->
-            </ul>
-        </nav>
-        <div class="header__tel">
-            <img src="img/phone-call.png" alt="иконка телефона" width="15" height="25">
-            <a href="tel:89076859456" class="header__tel-num">89076859456</a>
-        </div>
-        <div class="header__btn">
-            <button class="header__button  button" type="button">Войти</button>
-            <button class="header__button button" type="button">Регистрация</button>
-        </div>
-
-    </header>
-    <main class="main container">
-        <aside class="aside">
-            <div class="aside__socials">
+                </ul>
+            </nav>
+            <div class="header__tel">
+                <img src="img/phone-call.png" alt="иконка телефона" width="15" height="25">
+                <a href="tel:89076859456" class="header__tel-num">89076859456</a>
             </div>
-        </aside>
-    
-        <section class="section promo">
-            <div class="promo__content">
-                <h1 class="promo__title section__title">Репетитор по обществознанию</h1>
-                <p class="promo__description">Учись с нами. Получай хорошие оценки!</p>
+            <div class="header__btn">
+                <button class="header__button  button" type="button">Войти</button>
+                <button class="header__button button" type="button">Регистрация</button>
             </div>
-            <img class="promo__image" src="img/socialstudiestutor.png" alt="заставка" width="500" height="300">
-        </section>
-        <section class="section services">
-            <ul class="services__card">
-                <li class="services__item">
-                    <img class="services__image " src="./img/webinar.jpg" alt="картинка с чем-то" width="200"
-                        height="100">
-                    <p class="services__text" hidden>Вебинары. Позволяют общаться с большой онлайн-аудиторией из любого места
-                        и устройства.</p>
-                </li>
-                <li class="services__item">
-                    <img class="services__image " src="./img/Illustration.jpg" alt="картинка с чем-то" width="200" height="100">
-                    <p class="services__text" hidden>Иллюстрации. Усиливают визуальное восприятие и поясняют текст или теорию.</p>
-                </li>
-                <li class="services__item">
-                    <img class="services__image " src="./img/audio.webp" alt="картинка с чем-то" width="200" height="100">
-                    <p class="services__text" hidden>Аудиофайлы. Способствуют повышению эффективности обучения.</p>
-                </li>
-                <li class="services__item">
-                    <img class="services__image " src="./img/text.webp" alt="картинка с чем-то" width="200" height="100">
-                    <p class="services__text" hidden>Текстовые материалы. Позволяют изучить материал в своем темпе,
-                    возвращаться к разделам.</p>
-                </li>
-                <li class="services__item">
-                    <img class="services__image " src="./img/additionalmaterials.jpg" alt="картинка с чем-то" width="200" height="100">
-                    <p class="services__text" hidden>Дополнительные учебные материалы. Помогут узнать больше интересного.</p>
-                </li>
-                <li class="services__item">
-                    <img class="services__image " src="./img/interactivetasks.jpg" alt="картинка с чем-то" width="200" height="100">
-                    <p class="services__text" hidden>Интерактивные задания. Помогут систематизировать изученный материал и закрепить его в игровой форме.</p>
-                </li>
-                <li class="services__item">
-                    <img class="services__image " src="./img/video.png" alt="картинка с чем-то" width="200" height="100">
-                    <p class="services__text" hidden>Видеоматериалы. Дают возможность доступной и понятной визуализации материала.</p>
-                </li>
-                <li class="services__item">
-                    <img class="services__image " src="./img/chat.webp" alt="картинка с чем-то" width="200" height="100">
-                    <p class="services__text" hidden>Чат с преподавателем. Круглосуточное получение ответов на ваши вопросы.</p> 
-                </li>
-            </ul>
-        </section>
-        <section class="section card">
-            <h2 class="section__title">Почему выбирают нас?</h2>
-            <p class="section__description">TUTOR DI это:</p>
-            <ul class="card__list">
-             <li class="card__item">
-                    <h3 class="card__title">Заголовок 1</h3>
-                    <p class="card__description">Применение дистанционных средств обучения</p>
-                </li>
-                <li class="card__item">
-                    <h3 class="card__title">Заголовок 2</h3>
-                    <p class="card__description">Преподаватели проходят повышения своей квалификации и готовы отвечать
-                        на ваши вопросы 24/7</p>
-                </li>
-                <li class="card__item">
-                    <h3 class="card__title">Заголовок 3</h3>
-                    <p class="card__description">Экономия времени и денег, удобное подключение с любой точки России.</p>
-                <li class="card__item">
-                    <h3 class="card__title">Заголовок 4</h3>
-                    <p class="card__description">Низкая стоимость на обучение, но высокое качество получаемых
-                        знаний! Просто выберите удобный способ оплаты, подходящий именно вам.</p>
-                </li>      
-            </ul>
-        </section>
-             <!-- стили в services.css --> 
-         <section class="section--treners" id="trener"> 
-            <h2 class="treners__title section__title">Наши преподаватели:</h2> 
-               <ul class="treners__card"> 
-                <li class="treners__item"> 
-                    <img src="img/pravo.jpeg" width="250" height="150" alt="Педагог Мария Васильевна"   class="treners__img"> 
-                    <h3 class="treners__subtitle">Мария Васильевна</h3> 
-                    <p class="treners__test">Преподаватель по блоку "Право"</p> 
-                    <button class="treners__link" type="button">Подробнее</button> 
-                </li> 
-                <li class="treners__item"> 
-                    <img src="img/chel.jpeg" alt="Педагог Зинаида Петровна"  width="250" height="150" class="treners__img"> 
-                    <h3 class="treners__subtitle">Зинаида Петровна</h3> 
-                    <p class="treners__test">Преподаватель по блоку "Человек и общество"</p> 
-                    <button class="treners__link" type="button">Подробнее</button> 
-                </li> 
-                 <li class="treners__item"> 
-                    <img src="img/econom.jpeg" alt="Педагог София Георгиевна"  width="250" height="150" class="treners__img">
-                    <h3 class="treners__subtitle">София Георгиевна</h3> 
-                    <p class="treners__test">Преподаватель по блоку "Экономика"</p> 
-                    <button class="treners__link" type="button">Подробнее</button> 
-                </li> 
-                <li class="treners__item"> 
-                    <img src="img/duch.jpeg" alt="Педагог Станислав Владимирович"  width="250" height="150" class="treners__img"> 
-                    <h3 class="treners__subtitle">Станислав Владимирович</h3> 
-                    <p class="treners__test">Преподаватель по блоку "Духовная культура"</p> 
-                    <button class="treners__link" type="button">Подробнее</button> 
-                </li> 
-                       <li class="treners__item"> 
-                    <img src="img/poltica.jpeg" alt="Педагог Дарина Сергеевна"  width="250" height="150" class="treners__img"> 
-                    <h3 class="treners__subtitle">Дарина Сергеевна</h3> 
-                    <p class="treners__test">Преподаватель по блоку "Политика"</p> 
-                    <button class="treners__link" type="button">Подробнее</button> 
-                </li> 
-               </ul> 
-        </section>
-        <!-- стили в services.css --> 
-                        
-        <section class="section private lessons">
-            <h2 class="private lessons__content-title">Чем вебинары лучше?</h2>
-            <p class="section__description">Групповое занятие подразумевает нескольких слушателей, занимающихся по одной
-                программе. В группе предусмотрено заранее установленное расписание. Такие занятия эффективнее
-                индивидуальных, потому что позволяют ребятам рассуждать на заданную тему и быстро находить ответы на
-                задания.</p>
-            </div>
-        </section>
-        <section class="section cost">
-            <div class="cost__photo">
-                <h2 class="cost__contevt-title section__title">Сколько стоит занятие</h2>
-                <p class=" section__description">Цена одного пробного занятия составляет 249р. Стоимость урока в группе
-                    от 300-400р. и зависит от количества учеников, сложности усвоения учебного материала. Цена
-                    индивидуального занятия 799р.</p>
-                <button class="button cost__button" name="button">Записаться на пробное занятие</button>
-            </div>
-        </section>
-         <div class="applications" hidden>
-            <section class="application">
-                <div class="application__wrap">
-                    <h3 class="application__title">
-                        Запишитесь на курс <br> со скидкой 25%
-                    </h3>
-                    <p class="application__text">Акция деййствительна до 25 июля 2025года</p>
+        </header>
+        <main class="main container">
+            <aside class="aside">
+                <div class="aside__socials">
                 </div>
-                <button class="application__close" type="button">Закрыть</button>
+            </aside>
+            <section class="section promo">
+                <div class="promo__content">
+                    <h1 class="promo__title section__title">Репетитор по обществознанию</h1>
+                    <p class="promo__description">Учись с нами. Получай хорошие оценки!</p>
+                </div>
+                <img class="promo__image" src="img/socialstudiestutor.png" alt="заставка" width="500" height="300">
+            </section>
+            <section class="section services">
+                <ul class="services__card">
+                    <li class="services__item">
+                        <img class="services__image " src="./img/webinar.jpg" alt="картинка с чем-то" width="200"
+                            height="100">
+                        <p class="services__text" hidden>Вебинары. Позволяют общаться с большой онлайн-аудиторией из
+                            любого места
+                            и устройства.</p>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__image " src="./img/Illustration.jpg" alt="картинка с чем-то" width="200"
+                            height="100">
+                        <p class="services__text" hidden>Иллюстрации. Усиливают визуальное восприятие и поясняют текст
+                            или теорию.</p>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__image " src="./img/audio.webp" alt="картинка с чем-то" width="200"
+                            height="100">
+                        <p class="services__text" hidden>Аудиофайлы. Способствуют повышению эффективности обучения.</p>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__image " src="./img/text.webp" alt="картинка с чем-то" width="200"
+                            height="100">
+                        <p class="services__text" hidden>Текстовые материалы. Позволяют изучить материал в своем темпе,
+                            возвращаться к разделам.</p>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__image " src="./img/additionalmaterials.jpg" alt="картинка с чем-то"
+                            width="200" height="100">
+                        <p class="services__text" hidden>Дополнительные учебные материалы. Помогут узнать больше
+                            интересного.</p>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__image " src="./img/interactivetasks.jpg" alt="картинка с чем-то"
+                            width="200" height="100">
+                        <p class="services__text" hidden>Интерактивные задания. Помогут систематизировать изученный
+                            материал и закрепить его в игровой форме.</p>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__image " src="./img/video.png" alt="картинка с чем-то" width="200"
+                            height="100">
+                        <p class="services__text" hidden>Видеоматериалы. Дают возможность доступной и понятной
+                            визуализации материала.</p>
+                    </li>
+                    <li class="services__item">
+                        <img class="services__image " src="./img/chat.webp" alt="картинка с чем-то" width="200"
+                            height="100">
+                        <p class="services__text" hidden>Чат с преподавателем. Круглосуточное получение ответов на ваши
+                            вопросы.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section card">
+                <h2 class="section__title">Почему выбирают нас?</h2>
+                <p class="section__description">TUTOR DI это:</p>
+                <ul class="card__list">
+                    <li class="card__item">
+                        <h3 class="card__title">Заголовок 1</h3>
+                        <p class="card__description">Применение дистанционных средств обучения</p>
+                    </li>
+                    <li class="card__item">
+                        <h3 class="card__title">Заголовок 2</h3>
+                        <p class="card__description">Преподаватели проходят повышения своей квалификации и готовы
+                            отвечать
+                            на ваши вопросы 24/7</p>
+                    </li>
+                    <li class="card__item">
+                        <h3 class="card__title">Заголовок 3</h3>
+                        <p class="card__description">Экономия времени и денег, удобное подключение с любой точки России.
+                        </p>
+                    <li class="card__item">
+                        <h3 class="card__title">Заголовок 4</h3>
+                        <p class="card__description">Низкая стоимость на обучение, но высокое качество получаемых
+                            знаний! Просто выберите удобный способ оплаты, подходящий именно вам.</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- стили в services.css -->
+            <section class="section--treners" id="trener">
+                <h2 class="treners__title section__title">Наши преподаватели:</h2>
+                <ul class="treners__card">
+                    <li class="treners__item">
+                        <img src="img/pravo.jpeg" width="250" height="150" alt="Педагог Мария Васильевна"
+                            class="treners__img">
+                        <h3 class="treners__subtitle">Мария Васильевна</h3>
+                        <p class="treners__test">Преподаватель по блоку "Право"</p>
+                        <button class="treners__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="treners__item">
+                        <img src="img/chel.jpeg" alt="Педагог Зинаида Петровна" width="250" height="150"
+                            class="treners__img">
+                        <h3 class="treners__subtitle">Зинаида Петровна</h3>
+                        <p class="treners__test">Преподаватель по блоку "Человек и общество"</p>
+                        <button class="treners__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="treners__item">
+                        <img src="img/econom.jpeg" alt="Педагог София Георгиевна" width="250" height="150"
+                            class="treners__img">
+                        <h3 class="treners__subtitle">София Георгиевна</h3>
+                        <p class="treners__test">Преподаватель по блоку "Экономика"</p>
+                        <button class="treners__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="treners__item">
+                        <img src="img/duch.jpeg" alt="Педагог Станислав Владимирович" width="250" height="150"
+                            class="treners__img">
+                        <h3 class="treners__subtitle">Станислав Владимирович</h3>
+                        <p class="treners__test">Преподаватель по блоку "Духовная культура"</p>
+                        <button class="treners__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="treners__item">
+                        <img src="img/poltica.jpeg" alt="Педагог Дарина Сергеевна" width="250" height="150"
+                            class="treners__img">
+                        <h3 class="treners__subtitle">Дарина Сергеевна</h3>
+                        <p class="treners__test">Преподаватель по блоку "Политика"</p>
+                        <button class="treners__link" type="button">Подробнее</button>
+                    </li>
+                </ul>
+            </section>
+            <!-- стили в services.css -->
+
+            <section class="section private lessons">
+                <h2 class="private lessons__content-title">Чем вебинары лучше?</h2>
+                <p class="section__description">Групповое занятие подразумевает нескольких слушателей, занимающихся по
+                    одной
+                    программе. В группе предусмотрено заранее установленное расписание. Такие занятия эффективнее
+                    индивидуальных, потому что позволяют ребятам рассуждать на заданную тему и быстро находить ответы на
+                    задания.</p>
+            </section>
+            <section class="section cost">
+                <div class="cost__photo">
+                    <h2 class="cost__contevt-title section__title">Сколько стоит занятие</h2>
+                    <p class=" section__description">Цена одного пробного занятия составляет 249 р. Стоимость урока в
+                        группе
+                        от 300-400 р., все зависит от количества учеников, сложности усвоения учебного материала. Цена
+                        индивидуального занятия 799 р.</p>
+                    <button class="button cost__button" name="button">Записаться на пробное занятие</button>
+                </div>
+            </section>
+            <div class="applications" hidden>
+                <section class="application">
+                    <div class="application__wrap">
+                        <h3 class="application__title">
+                            Запишитесь на курс <br> со скидкой 25%
+                        </h3>
+                        <p class="application__text">Акция действительна до 25 июля 2025 года</p>
+                    </div>
+                    <button class="application__close" type="button">Закрыть</button>
                     <form action="/" class="application__form" id="formApplication">
-                        <input class="application__input" type="text" placeholder="Имя">
-                         <input class="application__input" type="tel" placeholder="Телефон">
-                         <input class="application__input" type="email" placeholder="Email">
+                        <input class="application__input" type="text" placeholder="Имя" id="username">
+                        <input class="application__input" type="tel" placeholder="Телефон" id="tel">
+                        <input class="application__input" type="email" placeholder="Email" id="email">
                         <button class="application__button button" type="submit">Отправить заявку</button>
                     </form>
                     <p id="application-message" class="application__message"></p>
+                </section>
+            </div>
+        </main>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/sertifacate1.jpg" alt="Slide 1" width="300" height="150" class="swiper-slid-image">
                 </div>
-            </section>
-    </main>
-     <!-- Swiper -->
-    <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="img/sertifacate1.jpg" alt="Slide 1"  width="300" height="150" class="swiper-slid-image">
-      </div>
-      <div class="swiper-slide">
-        <img src="img/sertifacate12.jpg" alt="Slide 2"  width="300" height="150" class="swiper-slid-image">
-      </div>
-      <div class="swiper-slide">
-        <img src="img/sertifacate3.webp" alt="Slide 3"  width="300" height="150" class="swiper-slid-image">
-      </div>
-    </div>
-    <!--Подвал-->
-    <footer class="footer container">
-        <div class="footer__hr"> </div>
-        <div>
-            <a class="footer__logo logo">TUTOR DI</a>
-            <p class="footer__copy">Контактная информация: Григорьева Д. Э.</p>
-            <p class="footer__copy">Политика конфиденциальности</p>
-            <p class="footer__copy">Ссылки на социальные сети</p>
+                <div class="swiper-slide">
+                    <img src="img/sertifacate12.jpg" alt="Slide 2" width="300" height="150" class="swiper-slid-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/sertifacate3.webp" alt="Slide 3" width="300" height="150" class="swiper-slid-image">
+                </div>
+            </div>
         </div>
-    </footer>
-    <!--Подвал-->
-    <script src="scripts/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-     <script>
-    var swiper = new Swiper(".mySwiper", {});
- </script>
+        <!--Подвал-->
+        <footer class="footer container">
+            <div class="footer__hr"> </div>
+            <div>
+                <a class="footer__logo logo">TUTOR DI</a>
+                <p class="footer__copy">Контактная информация: Григорьева Д. Э.</p>
+                <p class="footer__copy">Политика конфиденциальности</p>
+                <p class="footer__copy">Ссылки на социальные сети</p>
+            </div>
+        </footer>
+        <!--Подвал-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {});
+        </script>
+    </div>
 </body>
 </html>
